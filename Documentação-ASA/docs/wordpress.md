@@ -1,10 +1,10 @@
 `Wordpress`
 
 
-Criação de dois sites, um no wordpress e outro no mkdocs.
+    Criação de dois sites, um no wordpress e outro no mkdocs.
 
 
-Sendo docs.conf estático é www.conf Dinámico .
+    Sendo docs.conf estático é www.conf Dinámico .
 
 
 Primeiro teve que criar um container para os sites neles foi feito a Criação de dois diretórios eles são : docs.conf é www.conf . os Comandos usados:
@@ -46,9 +46,9 @@ Agora é Criado um usuário pro Container:
 Comando usado: adduser (nome)
 
 
-su - (nome) Para entrar no usuário
+    su - (nome) Para entrar no usuário
 
-Volta pro Container é entrar no Diretório /var/www/
+    Volta pro Container é entrar no Diretório /var/www/
 
 
 Remove o Arquivo html do Diretório
@@ -82,7 +82,8 @@ Agora é criado o Banco de Dados no Mariadb para o login no wordpress.
 Na linha de comando é usado o comando Mysql .
 
 
-Criação do nome do banco de Dados
+    Criação do nome do banco de Dados:
+
 [![Captura de ecrã de 2023-11-04 12-12-26](https://i.im.ge/2023/11/04/yaGyNx.Captura-de-ecra-de-2023-11-04-12-12-26.png)](https://im.ge/i/yaGyNx)
 
 
@@ -90,9 +91,10 @@ Criação do nome do banco de Dados
 
 Criação do usuário pro banco de dados.
 
+        user = Seu usuário
+        senha = Sua senha
 
-![Alt text](imagem.png)
-
+        create user ‘user’@’localhost’ identified by ‘senha’;
 
 Dando Privilegios necessarios pro usuario.
 
@@ -102,12 +104,9 @@ Dando Privilegios necessarios pro usuario.
 
 
 
+    Mkdocs
 
-
-
-
-Mkdocs
-listar mkdocs disponiveis pra instalação:
+    listar mkdocs disponiveis pra instalação:
 
 
 [![Captura de ecrã de 2023-11-06 11-36-01](https://i.im.ge/2023/11/06/y5ozur.Captura-de-ecra-de-2023-11-06-11-36-01.png)](https://im.ge/i/y5ozur)

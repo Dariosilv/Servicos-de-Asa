@@ -1,5 +1,15 @@
 Servidor lamp
 
+Pacotes
+
+    - apache2
+    - PHP
+    - mariadb-server
+    - libapache2-mod-php
+    - php-mysql
+    - curl
+    - mkdocs-*
+
 
 instalar o LAMP:
 
