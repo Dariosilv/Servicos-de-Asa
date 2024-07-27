@@ -79,8 +79,11 @@
             <div class="section" itemprop="articleBody">
               
                 <p><code>Wordpress</code></p>
-<p>Criação de dois sites, um no wordpress e outro no mkdocs.</p>
-<p>Sendo docs.conf estático é www.conf Dinámico .</p>
+<pre><code>Criação de dois sites, um no wordpress e outro no mkdocs.
+
+
+Sendo docs.conf estático é www.conf Dinámico .
+</code></pre>
 <p>Primeiro teve que criar um container para os sites neles foi feito a Criação de dois diretórios eles são : docs.conf é www.conf . os Comandos usados:</p>
 <p>Criar container:</p>
 <p><a href="https://im.ge/i/yS50Ap"><img alt="Captura de ecrã de 2023-11-03 12-00-14" src="https://i.im.ge/2023/11/03/yS50Ap.Captura-de-ecra-de-2023-11-03-12-00-14.png" /></a></p>
@@ -97,8 +100,10 @@ Nesse comando ele vai criar o wp-cli.phar que a configuração inicial do wordpr
 <a href="https://im.ge/i/ySjTTS"><img alt="Captura de ecrã de 2023-11-03 12-19-27" src="https://i.im.ge/2023/11/03/ySjTTS.Captura-de-ecra-de-2023-11-03-12-19-27.png" /></a></p>
 <p>Agora é Criado um usuário pro Container:</p>
 <p>Comando usado: adduser (nome)</p>
-<p>su - (nome) Para entrar no usuário</p>
-<p>Volta pro Container é entrar no Diretório /var/www/</p>
+<pre><code>su - (nome) Para entrar no usuário
+
+Volta pro Container é entrar no Diretório /var/www/
+</code></pre>
 <p>Remove o Arquivo html do Diretório</p>
 <p>comando :
 <a href="https://im.ge/i/yaT6lf"><img alt="Captura de ecrã de 2023-11-04 00-42-04" src="https://i.im.ge/2023/11/04/yaT6lf.Captura-de-ecra-de-2023-11-04-00-42-04.png" /></a></p>
@@ -110,14 +115,21 @@ Nesse comando ele vai criar o wp-cli.phar que a configuração inicial do wordpr
 <a href="https://im.ge/i/yaBVc0"><img alt="Captura de ecrã de 2023-11-04 12-05-36" src="https://i.im.ge/2023/11/04/yaBVc0.Captura-de-ecra-de-2023-11-04-12-05-36.png" /></a></p>
 <p>Agora é criado o Banco de Dados no Mariadb para o login no wordpress.</p>
 <p>Na linha de comando é usado o comando Mysql .</p>
-<p>Criação do nome do banco de Dados
-<a href="https://im.ge/i/yaGyNx"><img alt="Captura de ecrã de 2023-11-04 12-12-26" src="https://i.im.ge/2023/11/04/yaGyNx.Captura-de-ecra-de-2023-11-04-12-12-26.png" /></a></p>
+<pre><code>Criação do nome do banco de Dados:
+</code></pre>
+<p><a href="https://im.ge/i/yaGyNx"><img alt="Captura de ecrã de 2023-11-04 12-12-26" src="https://i.im.ge/2023/11/04/yaGyNx.Captura-de-ecra-de-2023-11-04-12-12-26.png" /></a></p>
 <p>Criação do usuário pro banco de dados.</p>
-<p><img alt="Alt text" src="imagem.png" /></p>
+<pre><code>    user = Seu usuário
+    senha = Sua senha
+
+    create user ‘user’@’localhost’ identified by ‘senha’;
+</code></pre>
 <p>Dando Privilegios necessarios pro usuario.</p>
 <p><a href="https://im.ge/i/y7MJ2p"><img alt="Captura de ecrã de 2023-11-04 13-04-57" src="https://i.im.ge/2023/11/04/y7MJ2p.Captura-de-ecra-de-2023-11-04-13-04-57.png" /></a></p>
-<p>Mkdocs
-listar mkdocs disponiveis pra instalação:</p>
+<pre><code>Mkdocs
+
+listar mkdocs disponiveis pra instalação:
+</code></pre>
 <p><a href="https://im.ge/i/y5ozur"><img alt="Captura de ecrã de 2023-11-06 11-36-01" src="https://i.im.ge/2023/11/06/y5ozur.Captura-de-ecra-de-2023-11-06-11-36-01.png" /></a></p>
 <p>instalação do mkdocs :</p>
 <p><a href="https://im.ge/i/y5Xouy"><img alt="Captura de ecrã de 2023-11-06 11-38-06" src="https://i.im.ge/2023/11/06/y5Xouy.Captura-de-ecra-de-2023-11-06-11-38-06.png" /></a></p>
